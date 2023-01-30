@@ -8,6 +8,7 @@ docker pull isaaceg/examen_docker:latest
 ```bash
 docker run -v [FolderPath]:/var/www/html/ -p 80:80 -p 22:22 -d isaaceg/examen_docker:latest
 ```
+
 ###Verificar que los servicios SSH y Apache esten corriendo:
 ```bash
 docker exec -it <container_id> bash
