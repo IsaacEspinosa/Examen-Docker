@@ -6,7 +6,7 @@ docker pull isaaceg/examen_docker:latest
 ```
 ### Correr el contenedor de la imagen:
 ```bash
-docker run -v [FolderPath]:/var/www/html/ -p 80:80 -p 22:22 -d isaaceg/examen_docker:latest
+docker run -v [FolderPath]:/var/www/html/ -p 8083:80 -p 2221:22 -d isaaceg/examen_docker:latest
 ```
 ### Verificar que los servicios SSH y Apache esten corriendo:
 ```bash
@@ -20,5 +20,5 @@ service apache2 start
 ```
 ### Acceder al contenido de la pagina web:
 ```bash
-http://localhost:80
+http://localhost:8083
 ```
